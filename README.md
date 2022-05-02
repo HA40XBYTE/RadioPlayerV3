@@ -61,7 +61,7 @@ NOTE: Make Sure You Have Started A Voice Chat In Your Channel/Group Before Deplo
 - Bot will starts radio automatically in given `CHAT_ID` with given `STREAM_URL` after deploy. 
 - 24x7 Music even if heroku restarts, radio stream restarts automatically. 
 - To play a song use /play as a reply to audio file or a youtube link or use /play [song name].
-- To download audio you can use [@SafoneMusicBot](http://t.me/SafoneMusicBot) or `/song` command to the bot.
+- To download audio you can use [@NS0FFICIALBOT](http://t.me/SafoneMusicBot) or `/song` command to the bot.
 - Use `/help` to know about other commands & their usage.
 
 ## Requirements
@@ -76,7 +76,7 @@ NOTE: Make Sure You Have Started A Voice Chat In Your Channel/Group Before Deplo
 ## Run On VPS
 
 ```sh
-$ git clone https://github.com/AsmSafone/RadioPlayerV3
+$ git clone https://github.com/Q7V4E3C/RadioPlayerV3
 $ cd RadioPlayerV3
 $ sudo apt install git curl python3-pip ffmpeg -y
 $ pip3 install -U pip
@@ -89,7 +89,7 @@ $ python3 main.py
 ## License
 ```sh
 RadioPlayerV3, Telegram Voice Chat Bot
-Copyright (c) 2021  Asm Safone <https://github.com/AsmSafone>
+Copyright (c) 2022  NS <https://github.com/Q7V4E3C>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as published by
