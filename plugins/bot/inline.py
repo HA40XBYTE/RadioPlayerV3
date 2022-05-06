@@ -1,6 +1,6 @@
 """
-RadioPlayerV3, Telegram Voice Chat Bot
-Copyright (c) 2021  Asm Safone <https://github.com/AsmSafone>
+RadioPlayerV3, Telegram Voice Chat Bot.  :):
+Copyright (c) 2022  NS <https://github.com/Q7V4E3C>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as published by
@@ -35,7 +35,7 @@ buttons = [
                 InlineKeyboardButton("SUPPORT", url="https://t.me/NSDISCUSSION"),
             ],
             [
-                InlineKeyboardButton("🤖 MAKE YOUR OWN BOT 🤖", url="https://heroku.com/deploy?template=https://github.com/AsmSafone/RadioPlayerV3"),
+                InlineKeyboardButton("🤖 MAKE YOUR OWN BOT 🤖", url="https://te.legra.ph/file/42505004723ac36990b1e.mp4"),
             ]
          ]
 
@@ -47,8 +47,8 @@ async def search(client, query):
         answers.append(
             InlineQueryResultPhoto(
                 title="Deploy Your Own Radio Player",
-                thumb_url="https://telegra.ph/file/4e839766d45935998e9c6.jpg",
-                photo_url="https://telegra.ph/file/4e839766d45935998e9c6.jpg",
+                thumb_url="https://te.legra.ph/file/defbe4a7f25eab78e7a46.jpg",
+                photo_url="https://te.legra.ph/file/defbe4a7f25eab78e7a46.jpg",
                 caption=f"{REPLY_MESSAGE}\n\n<b>© Powered By : \n@NS0FFICIAL | @NS0FFICIAL 👑</b>",
                 reply_markup=InlineKeyboardMarkup(buttons)
                 )
