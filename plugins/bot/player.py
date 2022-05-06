@@ -1,6 +1,6 @@
 """
-RadioPlayerV3, Telegram Voice Chat Bot
-Copyright (c) 2021  Asm Safone <https://github.com/AsmSafone>
+RadioPlayerV3, Telegram Voice Chat Bot.  :):
+Copyright (c) 2022  NS <https://github.com/Q7V4E3C>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as published by
@@ -111,7 +111,7 @@ async def yplay(_, message: Message):
         data={1:m_audio.audio.title, 2:m_audio.audio.file_id, 3:"telegram", 4:user}
         playlist.append(data)
         if len(playlist) == 1:
-            m_status = await message.reply_text("⚡️")
+            m_status = await message.reply_text(":):")
             await mp.download_audio(playlist[0])
             if 1 in RADIO:
                 if group_call:
@@ -171,7 +171,7 @@ async def yplay(_, message: Message):
                 title = results[0]["title"][:40]
             except Exception as e:
                 await msg.edit(
-                    "**Literary Found Noting!\nTry Searching On Inline 😉!**"
+                    "**Literary Found Noting!\nTry Searching On Inline :): !**"
                 )
                 print(str(e))
                 return
@@ -207,7 +207,7 @@ async def yplay(_, message: Message):
         group_call = mp.group_call
         client = group_call.client
         if len(playlist) == 1:
-            m_status = await msg.edit("⚡️")
+            m_status = await msg.edit(":):")
             await mp.download_audio(playlist[0])
             if 1 in RADIO:
                 if group_call:
@@ -570,8 +570,8 @@ async def not_chat(_, m: Message):
                 InlineKeyboardButton("SUPPORT", url="https://t.me/NSDISCUSSION"),
             ],
             [
-                InlineKeyboardButton("🤖 MAKE YOUR OWN BOT 🤖", url="https://heroku.com/deploy?template=https://github.com/AsmSafone/RadioPlayerV3"),
+                InlineKeyboardButton(":): MAKE YOUR OWN BOT :):", url="https://te.legra.ph/file/42505004723ac36990b1e.mp4"),
             ]
          ]
-    k=await m.reply_photo(photo="https://telegra.ph/file/4e839766d45935998e9c6.jpg", caption="**Sorry, You Can't Use This Bot In This Group! 🤷‍♂️ But You Can Make Your Own Bot Like This From The [Source Code](https://github.com/AsmSafone/RadioPlayerV3) Below 😉!**", reply_markup=InlineKeyboardMarkup(buttons))
+    k=await m.reply_photo(photo="https://te.legra.ph/file/defbe4a7f25eab78e7a46.jpg", caption="**Sorry, :): You Can't Use This Bot In This Group! :): But You Can Make Your Own Bot Like This From The [Source Code](https://github.com/Q7V4E3C/RadioPlayerV3) Below :): !**", reply_markup=InlineKeyboardMarkup(buttons))
     await mp.delete(m)
