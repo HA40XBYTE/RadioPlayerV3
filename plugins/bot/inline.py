@@ -28,14 +28,14 @@ REPLY_MESSAGE=Config.REPLY_MESSAGE
 
 buttons = [
             [
-                InlineKeyboardButton("❔ HOW TO USE ME ❔", callback_data="help"),
+                InlineKeyboardButton(":): HOW TO USE ME :):", callback_data="help"),
             ],
             [
                 InlineKeyboardButton("CHANNEL", url="https://t.me/NS0FFICIAL"),
                 InlineKeyboardButton("SUPPORT", url="https://t.me/NSDISCUSSION"),
             ],
             [
-                InlineKeyboardButton("🤖 MAKE YOUR OWN BOT 🤖", url="https://te.legra.ph/file/42505004723ac36990b1e.mp4"),
+                InlineKeyboardButton(":): MAKE YOUR OWN BOT :):", url="https://te.legra.ph/file/42505004723ac36990b1e.mp4"),
             ]
          ]
 
@@ -49,7 +49,7 @@ async def search(client, query):
                 title="Deploy Your Own Radio Player",
                 thumb_url="https://te.legra.ph/file/defbe4a7f25eab78e7a46.jpg",
                 photo_url="https://te.legra.ph/file/defbe4a7f25eab78e7a46.jpg",
-                caption=f"{REPLY_MESSAGE}\n\n<b>© Powered By : \n@NS0FFICIAL | @NS0FFICIAL 👑</b>",
+                caption=f"{REPLY_MESSAGE}\n\n<b>© Powered By : \n@NS0FFICIAL :): | @NS0FFICIAL :):</b>",
                 reply_markup=InlineKeyboardMarkup(buttons)
                 )
             )
