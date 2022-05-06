@@ -1,6 +1,6 @@
 """
 RadioPlayerV3, Telegram Voice Chat Bot
-Copyright (c) 2021  Asm Safone <https://github.com/AsmSafone>
+Copyright (c) 2022  NS <https://github.com/Q7V4E3C>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as published by
@@ -29,22 +29,22 @@ CHAT_ID=Config.CHAT_ID
 playlist=Config.playlist
 LOG_GROUP=Config.LOG_GROUP
 
-HOME_TEXT = "👋🏻 **Hi [{}](tg://user?id={})**,\n\nI'm **Radio Player V3.0** \nI Can Play Radio / Music / YouTube Live In Channel & Group 24x7 Nonstop. Made with ❤️ By @AsmSafone 😉!"
+HOME_TEXT = ":): **Hi [{}](tg://user?id={})**,\n\nI'm **Radio Player V3.0** \nI Can Play Radio / Music / YouTube Live In Channel & Group 24x7 Nonstop. Made with 🖤 By @NS0FFICIAL :):!"
 HELP_TEXT = """
-💡 --**Setting Up**--:
+:): --**Setting Up**--:
 
 \u2022 Add the bot and user account in your group with admin rights.
 \u2022 Start a voice chat in your group & restart the bot if not joined to vc.
 \u2022 Use /play [song name] or use /play as a reply to an audio file or youtube link.
 
-💡 --**Common Commands**--:
+:): --**Common Commands**--:
 
 \u2022 `/help` - shows help for all commands
 \u2022 `/song` [song name] - download the song as audio
 \u2022 `/current` - shows current track with controls
 \u2022 `/playlist` - shows the current & queued playlist
 
-💡 --**Admins Commands**--:
+:): --**Admins Commands**--:
 
 \u2022 `/radio` - start radio stream
 \u2022 `/stopradio` - stop radio stream
@@ -63,7 +63,7 @@ HELP_TEXT = """
 \u2022 `/setvar` - set/change heroku configs
 
 © **Powered By** : 
-**@NS0FFICIAL | @NSDISCUSSION** 👑
+**@NS0FFICIAL | @NSDISCUSSION** ;):
 """
 
 
@@ -71,7 +71,7 @@ HELP_TEXT = """
 async def cb_handler(client: Client, query: CallbackQuery):
     if query.from_user.id not in Config.ADMINS and query.data != "help":
         await query.answer(
-            "You're Not Allowed! 🤣",
+            "You're Not Allowed! :(:",
             show_alert=True
             )
         return
@@ -201,8 +201,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton("SUPPORT", url="https://t.me/NSDISCUSSION"),
             ],
             [
-                InlineKeyboardButton("MORE BOTS", url="https://t.me/NS0FFICIAL/173"),
-                InlineKeyboardButton("SOURCE CODE", url="https://github.com/AsmSafone/RadioPlayerV3"),
+                InlineKeyboardButton("MORE BOTS", url="https://t.me/NS0FFICIAL"),
+                InlineKeyboardButton("SOURCE CODE", url="https://t.me/NS0FFICIAL"),
             ],
             [
                 InlineKeyboardButton("BACK HOME", callback_data="home"),
@@ -228,8 +228,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton("SUPPORT", url="https://t.me/NSDISCUSSION"),
             ],
             [
-                InlineKeyboardButton("MORE BOTS", url="https://t.me/NS0FFICIAL/173"),
-                InlineKeyboardButton("SOURCE CODE", url="https://github.com/AsmSafone/RadioPlayerV3"),
+                InlineKeyboardButton("MORE BOTS", url="https://t.me/NS0FFICIAL"),
+                InlineKeyboardButton("SOURCE CODE", url="https://t.me/NS0FFICIAL"),
             ],
             [
                 InlineKeyboardButton("❔ HOW TO USE ❔", callback_data="help"),
@@ -266,8 +266,8 @@ async def start(client, message):
                 InlineKeyboardButton("SUPPORT", url="https://t.me/NSDISCUSSION"),
             ],
             [
-                InlineKeyboardButton("MORE BOTS", url="https://t.me/NS0FFICIAL/173"),
-                InlineKeyboardButton("SOURCE CODE", url="https://github.com/AsmSafone/RadioPlayerV3"),
+                InlineKeyboardButton("MORE BOTS", url="https://t.me/NS0FFICIAL"),
+                InlineKeyboardButton("SOURCE CODE", url="https://t.me/NS0FFICIAL"),
             ],
             [
                 InlineKeyboardButton("❔ HOW TO USE ❔", callback_data="help"),
@@ -290,7 +290,7 @@ async def help(client, message):
                 InlineKeyboardButton("SUPPORT", url="https://t.me/NSDISCUSSION"),
             ],
             [
-                InlineKeyboardButton("MORE BOTS", url="https://t.me/NS0FFICIAL/173"),
+                InlineKeyboardButton("MORE BOTS", url="https://t.me/NS0FFICIAL"),
                 InlineKeyboardButton("SOURCE CODE", url="https://github.com/AsmSafone/RadioPlayerV3"),
             ],
             [
@@ -310,7 +310,7 @@ async def set_heroku_var(client, message):
     if not Config.HEROKU_APP:
         buttons = [[InlineKeyboardButton('HEROKU_API_KEY', url='https://dashboard.heroku.com/account/applications/authorizations/new')]]
         k=await message.reply_text(
-            text="❗ **No Heroku App Found !** \n__Please Note That, This Command Needs The Following Heroku Vars To Be Set :__ \n\n1. `HEROKU_API_KEY` : Your heroku account api key.\n2. `HEROKU_APP_NAME` : Your heroku app name. \n\n**For More Ask In @AsmSupport !!**", 
+            text="❗ **No Heroku App Found !** \n__Please Note That, This Command Needs The Following Heroku Vars To Be Set :__ \n\n1. `HEROKU_API_KEY` : Your heroku account api key.\n2. `HEROKU_APP_NAME` : Your heroku app name. \n\n**For More Ask In @NSDISCUSSION !!**", 
             reply_markup=InlineKeyboardMarkup(buttons))
         await mp.delete(k)
         await mp.delete(message)
