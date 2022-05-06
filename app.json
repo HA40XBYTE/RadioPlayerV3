@@ -1,7 +1,7 @@
 {
   "name": "Telegram Radio Player V3",
-  "description": "An Telegram Bot By Safone to Play Nonstop Radio/Music/YouTube Live in Telegram Voice Chats",
-  "logo": "https://telegra.ph/file/a3755d9cb09f1361e3ac7.jpg",
+  "description": "An Telegram Bot By @NS0FFICIAL to Play Nonstop Radio/Music/YouTube Live in Telegram Voice Chats :):",
+  "logo": "https://te.legra.ph/file/defbe4a7f25eab78e7a46.jpg",
   "stack": "container",
   "keywords": [
     "telegram",
@@ -61,7 +61,7 @@
     },
     "REPLY_MESSAGE": {
       "description": "A reply message to those who message the USER account in PM. Make it blank if you do not need this feature.",
-      "value": "Hello Sir, I'm a bot to play radio/music/youtube live on telegram voice chat, not having time to chat with you 😂!",
+      "value": "Hello Sir, I'm a bot to play radio/music/youtube live on telegram voice chat, not having time to chat with you.! :):",
       "required": false
     },
     "HEROKU_API_KEY": {
