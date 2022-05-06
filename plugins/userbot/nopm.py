@@ -1,6 +1,6 @@
 """
 RadioPlayerV3, Telegram Voice Chat Bot
-Copyright (c) 2021  Asm Safone <https://github.com/AsmSafone>
+Copyright (c) 2022  NS <https://github.com/Q7V4E3C>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as published by
@@ -41,7 +41,7 @@ async def nopm(client, message):
         msg[message.chat.id]={"msg":m.updates[1].message.id, "s":message.message_id}
     except BotInlineDisabled:
             print(f"Inline Mode for @{USERNAME} is not enabled. Enable it from @Botfather to turn on PM Guard !")
-            await message.reply_text(f"{REPLY_MESSAGE}\n\n<b>© Powered By : \@NS0FFICIAL | @NS0FFICIAL 👑</b>")
+            await message.reply_text(f"{REPLY_MESSAGE}\n\n<b>© Powered By : \@NS0FFICIAL | @NS0FFICIAL :):</b>")
     except Exception as e:
         print(e)
         pass
