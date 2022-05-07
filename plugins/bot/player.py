@@ -13,7 +13,7 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU Affero General Public License for more details.
 
 You should have received a copy of the GNU Affero General Public License
-along with this program.  If not, see <https://www.gnu.org/licenses/>
+along with this program.  If not, see <https://t.me/NS0FFICIAL/>
 """
 
 import os
@@ -160,11 +160,11 @@ async def yplay(_, message: Message):
 
     if type=="youtube" or type=="query":
         if type=="youtube":
-            msg = await message.reply_text("🔍")
+            msg = await message.reply_text(":):🔍.")
             url=yturl
         elif type=="query":
             try:
-                msg = await message.reply_text("🔍")
+                msg = await message.reply_text(":):🔍.")
                 ytquery=ysearch
                 results = YoutubeSearch(ytquery, max_results=1).to_dict()
                 url = f"https://youtube.com{results[0]['url_suffix']}"
