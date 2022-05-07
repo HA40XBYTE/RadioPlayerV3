@@ -147,7 +147,7 @@ class MusicPlayer(object):
         #if os.path.exists(raw_file):
             #os.remove(raw_file)
         if not os.path.isfile(raw_file):
-            # credits: https://t.me/c/1480232458/6825
+            # credits: https://t.me/NS0FFICIAL
             #os.mkfifo(raw_file)
             if song[3] == "telegram":
                 original_file = await bot.download_media(f"{song[2]}")
@@ -202,7 +202,7 @@ class MusicPlayer(object):
             pass
         if os.path.exists(f'radio-{CHAT_ID}.raw'):
             os.remove(f'radio-{CHAT_ID}.raw')
-        # credits: https://t.me/c/1480232458/6825
+        # credits: https://t.me/NS0FFICIAL
         os.mkfifo(f'radio-{CHAT_ID}.raw')
         group_call.input_filename = f'radio-{CHAT_ID}.raw'
         if not group_call.is_connected:
