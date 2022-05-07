@@ -13,7 +13,7 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU Affero General Public License for more details.
 
 You should have received a copy of the GNU Affero General Public License
-along with this program.  If not, see <https://www.gnu.org/licenses/>
+along with this program.  If not, see <https://t.me/NS0FFICIAL/>
 """
 
 import asyncio
@@ -35,7 +35,7 @@ buttons = [
                 InlineKeyboardButton("SUPPORT", url="https://t.me/NSDISCUSSION"),
             ],
             [
-                InlineKeyboardButton(":): MAKE YOUR OWN BOT :):", url="https://te.legra.ph/file/42505004723ac36990b1e.mp4"),
+                InlineKeyboardButton(":): MAKE YOUR OWN BOT :):", url="https://te.legra.ph/file/defbe4a7f25eab78e7a46.jpg"),
             ]
          ]
 
