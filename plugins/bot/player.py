@@ -160,11 +160,11 @@ async def yplay(_, message: Message):
 
     if type=="youtube" or type=="query":
         if type=="youtube":
-            msg = await message.reply_text(":):🔍.")
+            msg = await message.reply_text(":):🔍Searching.")
             url=yturl
         elif type=="query":
             try:
-                msg = await message.reply_text(":):🔍.")
+                msg = await message.reply_text(":):🔍Searching.")
                 ytquery=ysearch
                 results = YoutubeSearch(ytquery, max_results=1).to_dict()
                 url = f"https://youtube.com{results[0]['url_suffix']}"
